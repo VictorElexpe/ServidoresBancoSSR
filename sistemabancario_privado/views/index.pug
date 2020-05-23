@@ -1,0 +1,27 @@
+h1 Banco Santander - Area de Clientes
+    h3 Iniciar sesión
+    form(method='POST', action='/login')
+     label(for='email') Email:
+     br
+     input(type='email', placeholder='nombre@email.com', name='email')
+     br
+     label(for='email') Contrase&ntilde;a:
+     br
+     input(type='password', name='password')
+     br
+     button(type='submit') Entrar en el area de empleados
+    h3.display-4.m-b-2 Nuevo empleado
+    form(method='POST', action='/signup')
+     label(for='email') Email:
+     input(type='email', placeholder='nombre@email.com', name='email')
+     br
+     label(for='password') Contrase&ntilde;a:
+     input(type='password', name='password')
+     br
+     label(for='firstName') Nombre:
+     input(type='firstName', name='firstName')
+     br
+     label(for='lastName') Apellidos:
+     input(type='lastName', name='lastName')
+     br
+     button(type='submit') Dar de alta nuevo empleado

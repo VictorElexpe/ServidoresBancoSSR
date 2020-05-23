@@ -1,0 +1,7 @@
+a(href='/logout') Cerrar sesión!
+
+h1= "Hola, " + user.firstName + " " + user.lastName + "!"
+p= user.email
+if user.bankNumber
+  p= "Número de cuenta: " + user.bankNumber
+  p= "El balance es: " + user.amount + " €"
